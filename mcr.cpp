@@ -2,7 +2,6 @@
 #include <vector>
 #include <string>
 
-using namespace std;
 
 bool isWin(vector<vector<char>> game){
   bool win = false;
@@ -20,11 +19,8 @@ bool isWin(vector<vector<char>> game){
 }
 int  main(){
   int i, j;
-  vector<vector<char>>game={
-    {' ',' ',' '},
-    {' ',' ',' '},
-    {' ',' ',' '}
-  }; // Tic-tac-toe
+  char game[3][3];
+   // Tic-tac-toe
   for(int x=0;x<3;x++)
   {
       for(int y=0;y<3;y++)
@@ -51,9 +47,9 @@ int  main(){
             game[i][j] = 'X';
         else 
             game[i][j] = 'O';
-        cout<<game[0][0]<<" "<<game[0][1]<<" "<<game[0][2]<<endl;
-        cout<<game[1][0]<<" "<<game[1][1]<<" "<<game[1][2]<<endl;
-        cout<<game[2][0]<<" "<<game[2][1]<<" "<<game[2][2]<<endl;
+        std::cout<<game[0][0]<<" "<<game[0][1]<<" "<<game[0][2]<<endl;
+        std::cout<<game[1][0]<<" "<<game[1][1]<<" "<<game[1][2]<<endl;
+        std::cout<<game[2][0]<<" "<<game[2][1]<<" "<<game[2][2]<<endl;
         if (isWin(game)){
             std::cout << "Win!" << std::endl;
             break; // need to terminate the problem
