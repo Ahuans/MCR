@@ -31,6 +31,7 @@ int  main(){
   char player1 = 'X';
   char player2 = 'O';
   bool turn = true; // false for player 1's turn, true for player 2's turn. Player 1 first.
+
   cout << "X = Player 1" << endl;
   cout<< "O = Player 2" << endl;
   int n=0;
